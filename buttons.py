@@ -11,7 +11,12 @@ def button_func():
     print('A basic button..')
 
 button_string = tk.StringVar(value = 'A button with string var')
-button = ttk.Button(window, text = 'A simple button', textvariable = button_string, command = button_func)
+button = ttk.Button(
+    window,
+    text = 'A simple button',
+    textvariable = button_string,
+    command = button_func
+)
 button.pack()
 
 # checkbutton
